@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_layout_contents",
+  "info": {
+    "displayName": "Content",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "richText": {
+      "type": "richtext",
+      "required": false
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "media2Right": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
