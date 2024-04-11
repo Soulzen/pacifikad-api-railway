@@ -376,10 +376,10 @@ export interface ApiAuthorAuthor extends Schema.CollectionType {
   attributes: {
     name: Attribute.String & Attribute.Required;
     surname: Attribute.String & Attribute.Required;
-    user: Attribute.Relation<
+    admin_user: Attribute.Relation<
       'api::author.author',
       'oneToOne',
-      'plugin::users-permissions.user'
+      'admin::user'
     >;
     posts: Attribute.Relation<
       'api::author.author',

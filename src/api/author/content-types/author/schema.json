@@ -20,10 +20,10 @@
       "type": "string",
       "required": true
     },
-    "user": {
+    "admin_user": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
+      "target": "admin::user"
     },
     "posts": {
       "type": "relation",
@@ -32,11 +32,12 @@
       "mappedBy": "author"
     },
     "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
